@@ -5,7 +5,7 @@ const TypeWriterText = () => {
   return (
     <Typewriter
       options={{
-        strings: ["Hello, my name is", "const arthur = (name, passion) =>"],
+        strings: ["Hello, my name is..", "const arthur = (name, passion)"],
         autoStart: true,
         loop: true,
       }}

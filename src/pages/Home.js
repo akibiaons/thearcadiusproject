@@ -6,15 +6,12 @@ const Home = () => {
       {/* Hero Section part 1 */}
       <div className="flex flex-col min-h-screen items-center bg-gray-900">
         {/* div for layout */}
-        <div className="absolute top-30 left-40 w-60 h-60 rounded-full bg-gradient-to-b from-[#52abc4] via-[#a7d575] to-[#37eaf7] blur-3xl opacity-50 scale-150">
-          {/* The div for the blur and radiant */}
-        </div>
         <div className="text-white mt-32 m-8">
           <div className="text-[#7feaff] font-mono">
             <TypeWriterText />
           </div>
           {/* The typewriter package can be used above to write out the dynamic text */}
-          <div className="text-[1.4rem] mt-8 mb-6">
+          <div className="text-[1.4rem] mt-4 mb-6">
             <h1 className="text-5xl font-semibold mb-2">Arthur Fernandez.</h1>
             <h4 className="text-[#888889]">
               I design & build meaningful experiences.
@@ -54,3 +51,9 @@ const Home = () => {
 };
 
 export default Home;
+
+{
+  /* <div className="absolute w-60 h-60 rounded-full bg-gradient-to-b from-[#52abc4] via-[#a7d575] to-[#37eaf7] blur-3xl opacity-50 scale-150">
+{/* The div for the blur and radiant
+</div> */
+}
