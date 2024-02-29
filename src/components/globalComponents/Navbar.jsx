@@ -11,42 +11,53 @@ export default function Navbar() {
     <nav
       className={`${
         isOpen
-          ? "absolute left-10 bg-[#141415] mt-6 w-[80%] rounded-t-xl"
-          : "absolute left-10 bg-[#141415] mt-6 w-[80%] rounded-xl"
+          ? "absolute py-2 px-2 left-10 bg-[#141415] mt-6 w-[80%] rounded-t-xl lg:mx-auto lg:container lg:left-0 lg:right-0 lg:w-[65%]"
+          : "absolute py-2 px-2 left-10 bg-[#141415] mt-6 w-[80%] rounded-xl lg:mx-auto lg:container lg:left-0 lg:right-0 lg:w-[65%]"
       }`}
     >
-      <div className="align-middle flex flex-col justify-around  md:flex-row md:justify-between md:gap-16 rounded-lg px-3 py-1 md:py-2 mt-4 transition-all duration-300 ease-in-out">
-        {/* Below is the navbar content before opening */}
-        <div className="flex justify-between">
-          <div className="text-md font-mono text-[#bfbfbf]">
-            <p>Arthur Fernandez</p>
-          </div>
-          <div
-            className={`hamburger-menu ${isOpen ? "open" : ""}`}
-            onClick={() => setIsOpen(!isOpen)}
+      <div className="flex justify-between items-center lg:w-[100%]">
+        <div className="text-md font-mono text-[#bfbfbf]">
+          <p>Arthur Fernandez</p>
+        </div>
+        <div
+          className={`hamburger-menu ${
+            isOpen ? "open" : "lg:hidden md:hidden"
+          }`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+        </div>
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isOpen ? "flex items-center z-50" : "hidden lg:flex md:flex"
+          } lg:items-center lg:flex-row flex-col absolute lg:relative top-full lg:top-auto left-0 w-full lg:w-auto bg-[#141415]/85 lg:bg-transparent text-[#bfbfbf] font-mono pt-4 lg:pt-0 pb-6 lg:pb-0`}
+        >
+          <a
+            href="#"
+            className="mx-4 my-2 hover:bg-gray-700 lg:hover:bg-transparent lg:text-[#bfbfbf] hover:text-white"
           >
-            <span className="line line1"></span>
-            <span className="line line2"></span>
-          </div>
-          {/* Navigation Links */}
-          <div
-            className={`${
-              isOpen ? "flex items-center z-50 rounded-b-xl" : "hidden"
-            } flex-col absolute top-full left-0 w-full bg-[#141415]/85 text-[#bfbfbf] font-mono pt-4 pb-6`}
+            About me
+          </a>
+          <a
+            href="#"
+            className="mx-4 my-2 hover:bg-gray-700 lg:hover:bg-transparent lg:text-[#bfbfbf] hover:text-white"
           >
-            <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              About me
-            </a>
-            <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Case Studies
-            </a>
-            <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Articles
-            </a>
-            <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Projects
-            </a>
-          </div>
+            Case Studies
+          </a>
+          <a
+            href="#"
+            className="mx-4 my-2 hover:bg-gray-700 lg:hover:bg-transparent lg:text-[#bfbfbf] hover:text-white"
+          >
+            Articles
+          </a>
+          <a
+            href="#"
+            className="mx-4 my-2 hover:bg-gray-700 lg:hover:bg-transparent lg:text-[#bfbfbf] hover:text-white"
+          >
+            Projects
+          </a>
         </div>
       </div>
     </nav>
