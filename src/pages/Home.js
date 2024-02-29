@@ -14,9 +14,9 @@ const Home = () => {
             <TypeWriterText />
           </div>
           {/* The typewriter package can be used above to write out the dynamic text */}
-          <div className="text-[1.4rem] mt-4 mb-6">
-            <h1 className="text-5xl font-semibold mb-2">Arthur Fernandez.</h1>
-            <h4 className="text-[#888889]">
+          <div className="text-[1rem] mt-4 mb-6">
+            <h1 className="text-4xl font-semibold mb-2">Arthur Fernandez.</h1>
+            <h4 className="text-[#888889] text-4xl leading-[3rem] font-semibold">
               I design & build meaningful experiences.
             </h4>
           </div>
