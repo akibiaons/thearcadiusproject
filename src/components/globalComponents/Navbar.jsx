@@ -32,19 +32,19 @@ export default function Navbar() {
           <div
             className={`${
               isOpen ? "flex items-center z-50 rounded-b-xl" : "hidden"
-            } flex-col absolute top-full left-0 w-full bg-[#141415] text-[#bfbfbf] font-mono`}
+            } flex-col absolute top-full left-0 w-full bg-[#141415]/85 text-[#bfbfbf] font-mono pt-4 pb-6`}
           >
             <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Home
+              About me
             </a>
             <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              About
+              Case Studies
             </a>
             <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Services
+              Articles
             </a>
             <a href="#" className="px-4 py-2 hover:bg-gray-700">
-              Contact
+              Projects
             </a>
           </div>
         </div>

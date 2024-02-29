@@ -3,7 +3,10 @@ import TypeWriterText from "../components/homeComponent/TypeWriter";
 const Home = () => {
   return (
     <>
-      {/* Hero Section part 1 */}
+      {/* Hero Section part 1 below */}
+      <div className="fixed top-1/2 right-0 transform -translate-y-1/2 w-60 h-60 rounded-full bg-gradient-radial from-[#52abc4] via-[#a7d575] to-[#37eaf7] blur-3xl opacity-50 scale-150 z-0">
+        {/* The div for the blur and radiant */}
+      </div>
       <div className="flex flex-col min-h-screen items-center bg-gray-900">
         {/* div for layout */}
         <div className="text-white mt-32 m-8">
@@ -36,6 +39,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       {/* end of the hero section */}
       {/* Part 2 is featured projects */}
       <div></div>
@@ -51,9 +55,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{
-  /* <div className="absolute w-60 h-60 rounded-full bg-gradient-to-b from-[#52abc4] via-[#a7d575] to-[#37eaf7] blur-3xl opacity-50 scale-150">
-{/* The div for the blur and radiant
-</div> */
-}
