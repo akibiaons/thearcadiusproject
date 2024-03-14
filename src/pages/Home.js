@@ -1,15 +1,20 @@
 import TypeWriterText from "../components/homeComponent/TypeWriter";
+// import FeaturedProjects from "../components/homeComponent/FeaturedProjects";
+import ProjectCard from "../components/homeComponent/FeaturedProjects";
+import ProjectCard2 from "../components/homeComponent/FeaturedTwo";
+// import FeaturedTwo from "../components/homeComponent/FeaturedTwo";
+// import FeaturedProjects from "../components/3DComponent/FeaturedProjects3D";
 
 const Home = () => {
   return (
     <>
       {/* Hero Section part 1 below */}
-      <div className="fixed top-1/2 right-0 transform -translate-y-1/2 w-60 h-60 rounded-full bg-gradient-radial from-[#52abc4] via-[#a7d575] to-[#37eaf7] blur-3xl opacity-50 scale-150 z-0">
+      <div className="fixed top-1/2 right-0 transform -translate-y-1/2 w-60 h-60 rounded-full bg-gradient-radial blur-3xl opacity-50 scale-150 z-0">
         {/* The div for the blur and radiant */}
       </div>
-      <div className="flex flex-col min-h-screen items-center bg-gray-900">
+      <div className="flex flex-col min-h-screen items-center bg-gray-900 lg:flex lg:flex-col lg:w-[100%]">
         {/* div for layout */}
-        <div className="text-white mt-32 m-8">
+        <div className="text-white mt-32 m-8 lg:w-[65%]">
           <div className="text-[#7feaff] font-mono">
             <TypeWriterText />
           </div>
@@ -21,7 +26,7 @@ const Home = () => {
             </h4>
           </div>
           <div>
-            <p className="font-mono text-[#bfbfbf]">
+            <p className="font-mono text-[#bfbfbf] text-sm leading-2">
               I'm a digital polymath - a constantly evolving digital creator
               driven by a passion for livelong learning and the desire to build
               and leave a lasting impact.
@@ -39,16 +44,43 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* end of the hero section */}
       {/* Part 2 is featured projects */}
-      <div></div>
+      <div className="relative bg-gray-950 flex flex-col min-h-screen glow">
+        {/*Div below is title of the section */}
+        <div className="flex flex-col text-center mt-10">
+          <p className="text-[#888889] mb-6 font-mono uppercase text-sm">
+            UX & Fullstack
+          </p>
+          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6">
+            Featured Projects
+          </h2>
+          <p className="text-[#888889] mb-4 font-mono text-sm">
+            Focused on the experience, driven by the engineering
+          </p>
+        </div>
+        {/* Div above is the title for the section below is the featured product card*/}
+        <div className="mx-auto w-[90%] pb-20 mt-20">
+          <div>
+            <ProjectCard />
+          </div>
+          <div className="mt-12">
+            <ProjectCard2 />
+          </div>
+        </div>
+      </div>
       {/* Part three is the about me */}
-      <div></div>
+      <div>
+        <div>About Me Section</div>
+      </div>
       {/* Part 4 is technical skills */}
-      <div></div>
+      <div>
+        <div>Technical skillz</div>
+      </div>
       {/* Part 5 is the footer */}
-      <div></div>
+      <div>
+        <div>footer?? For home page</div>
+      </div>
     </>
     //
   );
