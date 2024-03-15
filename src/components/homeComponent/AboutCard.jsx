@@ -40,6 +40,7 @@ export default function AboutCard() {
                 {cardDetail.title}
               </p>
             </div>
+            {/* Card description */}
             <div>
               <p className="text-[#888889] font-light">
                 {cardDetail.description}

@@ -3,8 +3,7 @@ import TypeWriterText from "../components/homeComponent/TypeWriter";
 import ProjectCard from "../components/homeComponent/FeaturedProjects";
 import ProjectCard2 from "../components/homeComponent/FeaturedTwo";
 import AboutCard from "../components/homeComponent/AboutCard";
-// import FeaturedTwo from "../components/homeComponent/FeaturedTwo";
-// import FeaturedProjects from "../components/3DComponent/FeaturedProjects3D";
+import AboutCardTwo from "../components/homeComponent/AboutCardTwo";
 
 const Home = () => {
   return (
@@ -71,7 +70,7 @@ const Home = () => {
         </div>
       </div>
       {/* Part three is the about me */}
-      <div className="relative bg-gray-950 flex flex-col min-h-screen">
+      <div className="relative bg-[#060708] flex flex-col min-h-screen">
         <div className="flex flex-col text-center mt-10">
           <p className="text-[#888889] mb-6 font-semibold uppercase text-sm">
             Synopsis
@@ -85,11 +84,13 @@ const Home = () => {
             videography, and branding.
           </p>
         </div>
-        <div className="mx-auto w-[90%] pb-20 mt-20">
+        <div className="mx-auto w-[90%] pb-6 mt-20">
           <div>
             <AboutCard />
           </div>
-          <div className="mt-12">{/* <ProjectCard2 /> */}</div>
+          <div className="mt-12">
+            <AboutCardTwo />
+          </div>
         </div>
       </div>
       {/* Part 4 is technical skills */}
