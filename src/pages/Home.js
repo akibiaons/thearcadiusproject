@@ -4,6 +4,9 @@ import ProjectCard from "../components/homeComponent/FeaturedProjects";
 import ProjectCard2 from "../components/homeComponent/FeaturedTwo";
 import AboutCard from "../components/homeComponent/AboutCard";
 import AboutCardTwo from "../components/homeComponent/AboutCardTwo";
+import TechnicalCard from "../components/homeComponent/TechnicalCard";
+import TechnicalCardTwo from "../components/homeComponent/TechnicalCardTwo";
+import TechnicalCardThree from "../components/homeComponent/TechnicalCardThree";
 
 const Home = () => {
   return (
@@ -94,8 +97,30 @@ const Home = () => {
         </div>
       </div>
       {/* Part 4 is technical skills */}
-      <div>
-        <div>Technical skillz</div>
+      <div className="relative bg-[#060708] flex flex-col min-h-screen">
+        <div className="flex flex-col text-center mt-10">
+          <p className="text-[#888889] mb-6 font-semibold uppercase text-sm">
+            Hardskills
+          </p>
+          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6">
+            Technical
+          </h2>
+          <p className="text-[#888889] mb-4 font-mono text-sm w-[95%] mx-auto">
+            As a creative technologist, I craft intuitive digital experiences
+            using a diverse set of tools and languages.
+          </p>
+        </div>
+        <div className="mx-auto w-[90%] pb-6 mt-20">
+          <div>
+            <TechnicalCard />
+          </div>
+          <div className="mt-12">
+            <TechnicalCardTwo />
+          </div>
+          <div className="mt-12">
+            <TechnicalCardThree />
+          </div>
+        </div>
       </div>
       {/* Part 5 is the footer */}
       <div>
