@@ -12,7 +12,7 @@ export default function ProjectCard2() {
       title: "KnJ Green Pack",
       isPrivate: true,
       desc: "Landing page and product management for LDPE distribution company",
-      tools: ["JavaScript", "React", "Tailwindcss", "Node.JS", "Firbase"],
+      tools: ["JavaScript", "React", "Tailwindcss", "Node.JS", "Firebase"],
     },
   ]);
 
