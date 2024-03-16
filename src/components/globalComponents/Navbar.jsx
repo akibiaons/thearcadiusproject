@@ -20,9 +20,7 @@ export default function Navbar() {
           <p>Arthur Fernandez</p>
         </div>
         <div
-          className={`hamburger-menu ${
-            isOpen ? "open" : "lg:hidden md:hidden"
-          }`}
+          className={`hamburger-menu ${isOpen ? "open" : "lg:hidden"}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className="line line1"></span>
@@ -31,7 +29,7 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div
           className={`${
-            isOpen ? "flex items-center z-50" : "hidden lg:flex md:flex"
+            isOpen ? "flex items-center z-50" : "hidden lg:flex "
           } lg:items-center lg:flex-row flex-col absolute lg:relative top-full lg:top-auto left-0 w-full lg:w-auto bg-[#141415]/85 lg:bg-transparent text-[#bfbfbf] font-mono pt-4 lg:pt-0 pb-6 lg:pb-0`}
         >
           <a
