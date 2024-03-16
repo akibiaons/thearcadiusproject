@@ -15,32 +15,34 @@ const Home = () => {
       <div className="fixed top-1/2 right-0 transform -translate-y-1/2 w-60 h-60 rounded-full bg-gradient-radial blur-3xl opacity-50 scale-150 z-0">
         {/* The div for the blur and radiant */}
       </div>
-      <div className="flex flex-col min-h-screen items-center bg-gray-900 lg:flex lg:flex-col lg:w-[100%]">
+      <div className="flex flex-col min-h-screen items-center bg-gray-900 lg:flex lg:flex-col lg:text-left lg:max-w-8xl lg:w-[100%]">
         {/* div for layout */}
         <div className="text-white mt-32 m-8 lg:w-[65%]">
-          <div className="text-[#7feaff] font-mono">
+          <div className="text-[#7feaff] font-mono lg:text-xl">
             <TypeWriterText />
           </div>
           {/* The typewriter package can be used above to write out the dynamic text */}
           <div className="text-[1rem] mt-4 mb-6">
-            <h1 className="text-4xl font-semibold mb-2">Arthur Fernandez.</h1>
-            <h4 className="text-[#888889] text-4xl leading-[3rem] font-semibold">
+            <h1 className="text-4xl lg:text-7xl font-semibold mb-2">
+              Arthur Fernandez.
+            </h1>
+            <h4 className="text-[#888889] text-4xl lg:text-7xl leading-[3rem] font-semibold">
               I design & build meaningful experiences.
             </h4>
           </div>
           <div>
-            <p className="font-mono text-[#bfbfbf] text-sm leading-2">
+            <p className="font-mono text-[#bfbfbf] text-sm lg:text-lg leading-2">
               I'm a digital polymath - a constantly evolving digital creator
               driven by a passion for livelong learning and the desire to build
               and leave a lasting impact.
             </p>
           </div>
         </div>
-        <div className="flex justify-start align-start">
-          <div className="bg-[#7feaff] rounded-full p-2 px-4 mr-8">
+        <div className="flex justify-start align-start lg:flex">
+          <div className="bg-[#7feaff] rounded-full p-2 px-4 mr-8 font-mono font-semibold">
             <button>Contact me</button>
           </div>
-          <div className="border-2 border-dotted text-[#bfbfbf] rounded-full p-2 px-4">
+          <div className="border-2 border-dotted text-[#bfbfbf] rounded-full p-2 px-4 font-mono font-semibold">
             <button>
               LinkedIn <span>{/* Small small arrow icon here...*/}</span>
             </button>
@@ -55,7 +57,7 @@ const Home = () => {
           <p className="text-[#888889] mb-6 font-semibold uppercase text-sm">
             UX & Fullstack
           </p>
-          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6">
+          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6 lg:text-6xl">
             Featured Projects
           </h2>
           <p className="text-[#888889] mb-4 font-mono text-sm">
