@@ -69,7 +69,7 @@ const Home = () => {
           <div>
             <ProjectCard />
           </div>
-          <div className="mt-12">
+          <div className="mt-16 mb-16">
             <ProjectCard2 />
           </div>
         </div>
