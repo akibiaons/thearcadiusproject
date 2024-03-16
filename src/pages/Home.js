@@ -87,6 +87,16 @@ const Home = () => {
             videography, and branding.
           </p>
         </div>
+        <div className="rounded-xl w-[80%] mx-auto mt-10">
+          {/* the photo!!  */}
+          <div class="about_image__hW1fB">
+            <img
+              className="rounded-2xl"
+              src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710536200/IMG_9518_o6sooj.jpg"
+              alt="Arcadius profile pic"
+            />
+          </div>
+        </div>
         <div className="mx-auto w-[90%] pb-6 mt-20">
           <div>
             <AboutCard />
