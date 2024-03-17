@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { IoExitOutline } from "react-icons/io5";
 import css from "../../styles/App.css";
 
 // ProjectCard component
@@ -65,27 +64,20 @@ export default function ProjectCard2() {
                   </div>
                 ))}
               </div>
-              <div className="flex lg:hidden w-30 h-26 align-baseline">
-                {/* <div>
-                  <IoExitOutline className="w-10 h-10" />
-                </div> */}
+              <div className="flex lg:hidden w-30 h-26 align-baseline mt-12">
                 <div>
                   <img
-                    src="https://res.cloudinary.com/daf0osydi/image/upload/v1709593243/image_ydxhpn.png"
-                    alt="project"
+                    src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710641273/Screenshot_2024-03-16_at_7.07.23_PM_cyxtke.png"
+                    alt="Atria wealth solutions video"
                   />
                 </div>
               </div>
             </div>
-            <div className="hidden lg:flex lg:ml-14 lg:h-10">
-              {/* <div>
-                  <IoExitOutline className="w-10 h-10" />
-                </div> */}
+            <div className="hidden lg:flex w-[70%]">
               <div>
                 <img
-                  className="lg:overflow-hidden"
-                  src="https://res.cloudinary.com/daf0osydi/image/upload/v1709593243/image_ydxhpn.png"
-                  alt="project"
+                  src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710641273/Screenshot_2024-03-16_at_7.07.23_PM_cyxtke.png"
+                  alt="Atria wealth solutions video"
                 />
               </div>
             </div>

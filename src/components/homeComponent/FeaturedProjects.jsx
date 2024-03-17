@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { IoExitOutline } from "react-icons/io5";
 import css from "../../styles/App.css";
 
 // ProjectCard component
@@ -74,9 +73,6 @@ export default function ProjectCard() {
                 ))}
               </div>
               <div className="flex lg:hidden w-30 h-26 align-baseline mt-12">
-                {/* <div>
-              <IoExitOutline className="w-10 h-10" />
-            </div> */}
                 <div>
                   <video
                     src="https://res.cloudinary.com/dscoioscc/video/upload/v1703952163/wvtbmeetyrikmihj6lry.mp4"
