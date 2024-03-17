@@ -111,12 +111,12 @@ const Home = () => {
         </div>
       </div>
       {/* Part 4 is technical skills */}
-      <div className="relative bg-[#060708] flex flex-col min-h-screen">
+      <div className="relative bg-[#060708] flex flex-col min-h-screen lg:p-32">
         <div className="flex flex-col text-center mt-10">
           <p className="text-[#888889] mb-6 font-semibold uppercase text-sm">
             Hardskills
           </p>
-          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6">
+          <h2 className="text-4xl font-semibold text-[#bfbfbf] mb-6 lg:text-6xl">
             Technical
           </h2>
           <p className="text-[#888889] mb-4 font-mono text-sm w-[95%] mx-auto">
@@ -124,15 +124,18 @@ const Home = () => {
             using a diverse set of tools and languages.
           </p>
         </div>
-        <div className="mx-auto w-[90%] pb-6 mt-20">
-          <div>
+        <div className="mx-auto w-[90%] pb-6 mt-20 lg:grid lg:grid-cols-2">
+          <div className="flex flex-col gap-4">
             <TechnicalCard />
-          </div>
-          <div className="mt-12">
             <TechnicalCardTwo />
-          </div>
-          <div className="mt-12">
             <TechnicalCardThree />
+          </div>
+          <div className="w-full">
+            <img
+              className=""
+              src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710528445/dataism-24_y9ufhd.svg"
+              alt="background"
+            />
           </div>
         </div>
       </div>
