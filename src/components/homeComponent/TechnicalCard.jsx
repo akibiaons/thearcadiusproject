@@ -1,4 +1,5 @@
 import React from "react";
+import useScrollTriggerAnimation from "../../hooks/useScrollTriggerAnimation";
 
 const cardDetails = [
   {
@@ -8,12 +9,17 @@ const cardDetails = [
   },
 ];
 
-export default function TechnicalCard() {
+export default function TechnicalCard({ title, description }) {
+  //
+  const animationRef = useScrollTriggerAnimation();
   return (
     <>
-      {cardDetails.map((cardDetail) => {
+      {cardDetails.map((cardDetail, index) => {
         return (
-          <div className="bg-[#0e0f11] text-white p-4 rounded-xl">
+          <div
+            ref={animationRef}
+            className="bg-[#0e0f11] text-white p-4 rounded-xl"
+          >
             {/* Below is the svg icon */}
             <div className="w-8 h-8 bg-[#141415] text-[#7feaff] mb-2">
               <span class="about_icon__HUfPT">

@@ -8,7 +8,52 @@ import TechnicalCard from "../components/homeComponent/TechnicalCard";
 import TechnicalCardTwo from "../components/homeComponent/TechnicalCardTwo";
 import TechnicalCardThree from "../components/homeComponent/TechnicalCardThree";
 
+// Card details to go into the format of the cards
+const cardDetails = [
+  {
+    title: "Title for TechnicalCard",
+    description: "Description for TechnicalCard",
+    // Include any additional props specific to this card
+  },
+  {
+    title: "Title for TechnicalCardTwo",
+    description: "Description for TechnicalCardTwo",
+    // Include any additional props specific to this card
+  },
+  {
+    title: "Title for TechnicalCardThree",
+    description: "Description for TechnicalCardThree",
+    // Include any additional props specific to this card
+  },
+  // Add more objects for additional cards
+];
+
 const Home = () => {
+  // Format card details to fit in sticky scroll
+  const content = cardDetails.map((card) => ({
+    title: card.title,
+    description: card.description,
+    content: (
+      <>
+        <TechnicalCard
+          title={card.title}
+          description={card.description}
+          // Pass any additional props your TechnicalCard might need
+        />
+        <TechnicalCardTwo
+          title={card.title}
+          description={card.description}
+          // Pass any additional props your TechnicalCardTwo might need
+        />
+        <TechnicalCardThree
+          title={card.title}
+          description={card.description}
+          // Pass any additional props your TechnicalCardThree might need
+        />
+      </>
+    ),
+  }));
+
   return (
     <>
       {/* Hero Section part 1 below */}
