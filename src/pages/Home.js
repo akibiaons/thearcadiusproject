@@ -8,9 +8,6 @@ import TechnicalCard from "../components/homeComponent/TechnicalCard";
 import TechnicalCardTwo from "../components/homeComponent/TechnicalCardTwo";
 import TechnicalCardThree from "../components/homeComponent/TechnicalCardThree";
 
-// UI component
-import { StickyScroll } from "../components/homeComponent/sticky-scroll-reveal";
-
 // Card details to go into the format of the cards
 const cardDetails = [
   {
@@ -174,12 +171,9 @@ const Home = () => {
         </div>
         <div className="mx-auto w-[90%] pb-6 mt-20 lg:grid lg:grid-cols-2">
           <div className="flex flex-col gap-4">
-            <StickyScroll content={content} />
-            {/* 
             <TechnicalCard />
             <TechnicalCardTwo />
-            <TechnicalCardThree /> 
-            */}
+            <TechnicalCardThree />
           </div>
           <div className="w-full">
             <img
