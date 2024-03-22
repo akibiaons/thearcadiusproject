@@ -18,7 +18,7 @@ const useScrollTriggerAnimation = () => {
             end: "bottom top+=100",
             scrub: false,
             pin: false,
-            markers: true,
+            markers: false,
             // other scrolltrigger options...
           },
         })
