@@ -68,7 +68,7 @@ export default function ProjectCard2() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710641273/Screenshot_2024-03-16_at_7.07.23_PM_cyxtke.png"
-                    alt="Atria wealth solutions video"
+                    alt="knj green pack home page"
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function ProjectCard2() {
               <div>
                 <img
                   src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710641273/Screenshot_2024-03-16_at_7.07.23_PM_cyxtke.png"
-                  alt="Atria wealth solutions video"
+                  alt="knj green pack"
                 />
               </div>
             </div>
