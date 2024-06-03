@@ -20,6 +20,27 @@ export default function ProjectCard() {
         "Firebase",
         "Chrome Manifest V3",
       ],
+      mediaType: "video",
+      mediaSrc:
+        "https://res.cloudinary.com/dscoioscc/video/upload/v1703952163/wvtbmeetyrikmihj6lry.mp4",
+    },
+    {
+      id: 2,
+      title: "Memphis Turnkey Rental",
+      isPrivate: false,
+      desc: "Frontend for clients to browse property listings, custom backend to manage C.R.U.D for our client and admin system to manage over 100+ rental units",
+      tools: [
+        "JavaScript",
+        "TypeScript",
+        "NextJS",
+        "Node",
+        "Firebase",
+        "TailwindCSS",
+        "SQL",
+      ],
+      mediaType: "image",
+      mediaSrc:
+        "https://res.cloudinary.com/dscoioscc/image/upload/v1717416530/Screenshot_2024-06-03_at_5.08.43_AM_napxgd.png",
     },
   ]);
 
@@ -34,11 +55,8 @@ export default function ProjectCard() {
         const theRest = words.slice(6).join(" ");
 
         return (
-          <div className="lg:flex">
-            <div
-              key={project.id}
-              className="bg-black text-white p-4 rounded-xl"
-            >
+          <div key={project.id} className="lg:flex mb-16">
+            <div className="bg-black text-white p-4 rounded-xl">
               {/* Project title and Github repo link */}
               <div className="flex items-baseline mb-8">
                 <p className="font-bold text-md mt-2 mr-4 bg-gradient-to-r from-[#a7d575] via-[#52abc4] to-[#37eaf7] inline-block text-transparent bg-clip-text">
@@ -73,27 +91,31 @@ export default function ProjectCard() {
                 ))}
               </div>
               <div className="flex lg:hidden w-30 h-26 align-baseline mt-12">
-                <div>
+                {project.mediaType === "video" ? (
                   <video
-                    src="https://res.cloudinary.com/dscoioscc/video/upload/v1703952163/wvtbmeetyrikmihj6lry.mp4"
-                    alt="Atria wealth solutions video"
+                    src={project.mediaSrc}
+                    alt={project.title + " video"}
                     autoPlay
                     muted
                     loop
                   />
-                </div>
+                ) : (
+                  <img src={project.mediaSrc} alt={project.title + " image"} />
+                )}
               </div>
             </div>
             <div className="hidden lg:flex w-[70%]">
-              <div>
+              {project.mediaType === "video" ? (
                 <video
-                  src="https://res.cloudinary.com/dscoioscc/video/upload/v1703952163/wvtbmeetyrikmihj6lry.mp4"
-                  alt="Atria wealth solutions video"
+                  src={project.mediaSrc}
+                  alt={project.title + " video"}
                   autoPlay
                   muted
                   loop
                 />
-              </div>
+              ) : (
+                <img src={project.mediaSrc} alt={project.title + " image"} />
+              )}
             </div>
           </div>
         );
