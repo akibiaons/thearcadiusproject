@@ -144,7 +144,10 @@ const Home = () => {
             <div class="about_image__hW1fB">
               <img
                 className="rounded-2xl lg:w-[90%]"
-                src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1710536200/IMG_9518_o6sooj.jpg"
+                src="https://res.cloudinary.com/dfgr7tov1/image/upload/v1723257378/IMG_7286_lvhpak.jpg
+
+
+"
                 alt="Arcadius profile pic"
               />
             </div>
