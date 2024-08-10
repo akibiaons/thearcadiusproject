@@ -2,6 +2,7 @@ import TypeWriterText from "../components/homeComponent/TypeWriter";
 // import FeaturedProjects from "../components/homeComponent/FeaturedProjects";
 import ProjectCard from "../components/homeComponent/FeaturedProjects";
 import ProjectCard2 from "../components/homeComponent/FeaturedTwo";
+import ProjectCard3 from "../components/homeComponent/FeaturedThree";
 import AboutCard from "../components/homeComponent/AboutCard";
 import AboutCardTwo from "../components/homeComponent/AboutCardTwo";
 import TechnicalCard from "../components/homeComponent/TechnicalCard";
@@ -116,6 +117,9 @@ const Home = () => {
           </div>
           <div className="mt-16 mb-16">
             <ProjectCard2 />
+          </div>
+          <div className="mt-16 mb-16">
+            <ProjectCard3 />
           </div>
         </div>
       </div>

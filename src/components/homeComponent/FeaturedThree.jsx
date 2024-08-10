@@ -3,26 +3,26 @@ import { FaGithub } from "react-icons/fa";
 import css from "../../styles/App.css";
 
 // ProjectCard component
-export default function ProjectCard() {
+export default function ProjectCard3() {
   // State hook with useEffect
   const [projects, setProjects] = useState([
     {
-      id: 1,
-      title: "Atria Wealth Solutions",
-      isPrivate: true,
-      desc: "Data automation and CRM for wealth management and broker delear",
+      id: 2,
+      title: "Memphis Turnkey Rental",
+      isPrivate: false,
+      desc: "Frontend for clients to browse property listings, custom backend to manage C.R.U.D for our client and admin system to manage over 100+ rental units",
       tools: [
         "JavaScript",
         "TypeScript",
-        "Next 13",
-        "Node.js",
-        "Webpack",
+        "NextJS",
+        "Node",
         "Firebase",
-        "Chrome Manifest V3",
+        "TailwindCSS",
+        "SQL",
       ],
-      mediaType: "video",
+      mediaType: "image",
       mediaSrc:
-        "https://res.cloudinary.com/dscoioscc/video/upload/v1703952163/wvtbmeetyrikmihj6lry.mp4",
+        "https://res.cloudinary.com/dscoioscc/image/upload/v1717416530/Screenshot_2024-06-03_at_5.08.43_AM_napxgd.png",
     },
   ]);
 
@@ -37,8 +37,11 @@ export default function ProjectCard() {
         const theRest = words.slice(6).join(" ");
 
         return (
-          <div key={project.id} className="lg:flex mb-16">
-            <div className="bg-black text-white p-4 rounded-xl">
+          <div className="lg:flex">
+            <div
+              key={project.id}
+              className="bg-black text-white p-4 rounded-xl lg:w-[50%]"
+            >
               {/* Project title and Github repo link */}
               <div className="flex items-baseline mb-8">
                 <p className="font-bold text-md mt-2 mr-4 bg-gradient-to-r from-[#a7d575] via-[#52abc4] to-[#37eaf7] inline-block text-transparent bg-clip-text">
@@ -73,31 +76,21 @@ export default function ProjectCard() {
                 ))}
               </div>
               <div className="flex lg:hidden w-30 h-26 align-baseline mt-12">
-                {project.mediaType === "video" ? (
-                  <video
-                    src={project.mediaSrc}
-                    alt={project.title + " video"}
-                    autoPlay
-                    muted
-                    loop
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/dscoioscc/image/upload/v1717416530/Screenshot_2024-06-03_at_5.08.43_AM_napxgd.png"
+                    alt="knj green pack home page"
                   />
-                ) : (
-                  <img src={project.mediaSrc} alt={project.title + " image"} />
-                )}
+                </div>
               </div>
             </div>
             <div className="hidden lg:flex w-[70%]">
-              {project.mediaType === "video" ? (
-                <video
-                  src={project.mediaSrc}
-                  alt={project.title + " video"}
-                  autoPlay
-                  muted
-                  loop
+              <div>
+                <img
+                  src="https://res.cloudinary.com/dscoioscc/image/upload/v1717416530/Screenshot_2024-06-03_at_5.08.43_AM_napxgd.png"
+                  alt="knj green pack"
                 />
-              ) : (
-                <img src={project.mediaSrc} alt={project.title + " image"} />
-              )}
+              </div>
             </div>
           </div>
         );
